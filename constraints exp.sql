@@ -29,3 +29,15 @@ SELECT * FROM student WHERE city NOT IN ("mumbai");
 SELECT * FROM student WHERE marks BETWEEN 0 AND 90 LIMIT 3;
 SELECT * FROM student WHERE marks > 70 ORDER BY city ASC LIMIT 3;
 SELECT * FROM student WHERE marks > 70 ORDER BY city DESC LIMIT 3;
+USE college;
+SELECT grade,count(name) FROM student GROUP BY grade ORDER BY grade;
+SELECT city,count(name) FROM student GROUP BY city HAVING max(marks) > 90;
+SELECT city,count(name) FROM student WHERE max(marks) > 90 GROUP BY city;
+
+GENERAL ORDER OF WRITING :-
+SELECT column
+FROM table_name
+WHERE condition
+GROUP BY column(s)
+HAVING condition
+ORDER BY columns(s) ASC/DSC;
