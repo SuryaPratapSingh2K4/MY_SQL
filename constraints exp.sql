@@ -35,7 +35,7 @@ SELECT city,count(name) FROM student GROUP BY city HAVING max(marks) > 90;
 SELECT city,count(name) FROM student WHERE max(marks) > 90 GROUP BY city;
 
 GENERAL ORDER OF WRITING :-
-SELECT column
+SELECT column(s)
 FROM table_name
 WHERE condition
 GROUP BY column(s)
