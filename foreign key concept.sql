@@ -29,7 +29,4 @@ INSERT INTO teacher VALUES
 (3,"sam",103),
 (4,"clark",104),
 (5,"kent",104);
-UPDATE teacher
-SET dept_id = 102
-WHERE id = 5;
 SELECT * FROM teacher;
